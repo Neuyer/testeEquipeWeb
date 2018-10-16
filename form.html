@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" >
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/form.js">  </script>
+  </head>
+  <body>
+    <header class="corCinza">
+      <h1>Formulário passo-a-passo <span>teste equipe web</span></h1>
+    </header>
+
+    <div class="containerPrincipal" id="containerPrincipal">
+      <header>
+        <h2 class="fontCinza h" style="display:block">Dados</h2>
+        <h2 class="fontCinza h">Documentos</h2>
+        <h2 class="fontCinza h">Contatos</h2>
+        <h2 class="fontCinza h">Confirmação</h2>
+      </header>
+            <div class="containerIndicadores" id="containerIndicadores">
+                <div class="indicadores corCinza" style="background-color:rgb(225,34,41)">
+                    Dados
+                </div>
+                  <div class="indicadores corCinza">
+                    Documentos
+                  </div>
+                    <div class="indicadores corCinza">
+                      Contatos
+                    </div>
+                      <div class="indicadores corCinza">
+                        Confirmação
+                      </div>
+            </div>
+
+            <div class="containerForm" id="containerForm">
+                <form name="formulario" action="sucesso.html" id="form">
+                  <div id="containerDec">
+                    <div class="decoracao" id="decA"></div>
+                    <div class="decoracao" id="decB"></div>
+                    </div>
+                  <fieldset id="campoDados" class="campo" style="display:block">
+                        <label for="nome"></label>
+                        <label for="email"></label>
+                        <input type="text" id="nome" name="nome" value="" placeholder="Nome" required>
+                          <input type="email" id="email" name="email" value="" placeholder="e-mail" required>
+                  </fieldset>
+                  <fieldset id="campoDocumentos" class="campo">
+                        <label for="rg"></label>
+                        <label for="cpf"></label>
+                            <input type="text" id="rg" name="rg" value="" placeholder="RG" required>
+                            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" value="" placeholder="CPF" required>
+                        <label for="cidade"></label>
+                        <label for="cep"></label>
+                            <input type="text" id="cidade" name="cidade" value="" placeholder="Cidade" required>
+                            <input type="text" id="cep" name="cep" value="" placeholder="CEP" required>
+                  </fieldset>
+                  <fieldset id="campoContato" class="campo">
+                        <label for="tel"></label>
+                        <label for="cel"></label>
+                            <input type="tel" id="tel" name="tel" value="" placeholder="Telefone" required>
+                            <input type="tel" id="cel" name="cel" value="" placeholder="Celular" required>
+                        <label for="linkedin"></label>
+                        <label for="git"></label>
+                            <input type="text" id="linkedin" name="Linkedin" value="" placeholder="linkedin" required>
+                            <input type="text" id="git" name="git" value="" placeholder="Github" required>
+                  </fieldset>
+
+                  <div class="campo fontCinza">
+                      <div class="confirma fontCinza">
+                        <div class="visualiza">Nome: <p></p> </div>
+                          <div class="visualiza">email: <p></p></div>
+                            <div class="visualiza">RG: <p></p></div>
+                              <div class="visualiza">CPF: <p></p></div>
+                                <div class="visualiza">Cidade: <p></p></div>
+
+                      </div>
+                          <div class="confirma fontCinza">
+                            <div class="visualiza">Cep: <p></p></div>
+                              <div class="visualiza">Telefone: <p></p></div>
+                                <div class="visualiza">Cel: <p></p></div>
+                                  <div class="visualiza">Linkedin: <p></p></div>
+                                    <div class="visualiza">GitHub: <p></p></div>
+                      </div>
+
+                  </div>
+                </form>
+            </div>
+            <button id="btn" type="button" name="button" onclick="mudaCampo()">Próximo</button>
+    </div>
+
+    <footer class="corCinza">
+    </footer>
+     <script type="text/javascript">
+
+        </script>
+  </body>
+
+</html>
